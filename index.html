@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <title>Happy Birthday Jenni!!! 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Quicksand:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css" />
+</head>
+<body>
+
+  <!-- Background canvas for stars -->
+  <canvas id="star-canvas"></canvas>
+
+  <!-- Floating particles -->
+  <div class="particles-container" id="particles"></div>
+
+  <!-- Audio -->
+  <audio class="song" loop>
+    <source src="./music/hbd.mpeg">
+  </audio>
+
+  <!-- Progress dots -->
+  <div class="progress-dots" id="progressDots"></div>
+
+  <!-- Skip button -->
+  <button class="skip-btn" id="skipBtn" onclick="skipAnimation()">Skip ⏭</button>
+
+  <!-- ============================================================ -->
+  <!-- SLIDES WRAPPER -->
+  <!-- ============================================================ -->
+  <div class="slides-wrapper" id="slidesWrapper">
+
+    <!-- ===== SLIDE 1: OPENING ===== -->
+    <div class="slide active" id="slide-1" data-slide="1">
+      <div class="slide-inner">
+        <div class="slide1-stars">
+          <span>✦</span><span>★</span><span>✦</span><span>☆</span><span>✦</span><span>★</span>
+        </div>
+        <p class="slide1-dear">Dear,</p>
+        <h1 class="slide1-name">
+          <span class="name-char">J</span><span class="name-char">e</span><span class="name-char">n</span><span class="name-char">n</span><span class="name-char">i</span>
+          <span class="name-space"> </span>
+          <span class="name-char">S</span><span class="name-char">e</span><span class="name-char">s</span><span class="name-char">i</span><span class="name-char">l</span><span class="name-char">l</span>
+        </h1>
+        <p class="slide1-congrats">✨ CONGRATULATIONS ✨</p>
+        <div class="slide1-hearts">
+          <span class="float-heart">💕</span>
+          <span class="float-heart delay1">💖</span>
+          <span class="float-heart delay2">💗</span>
+        </div>
+        <button class="next-btn" onclick="nextSlide()">Let's Go 🎉</button>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 2: BIRTHDAY ===== -->
+    <div class="slide" id="slide-2" data-slide="2">
+      <div class="slide-inner">
+        <div class="cake-container">
+          <div class="cake">
+            <div class="cake-top">
+              <div class="candles">
+                <div class="candle"><div class="flame"></div></div>
+                <div class="candle"><div class="flame"></div></div>
+                <div class="candle"><div class="flame"></div></div>
+                <div class="candle"><div class="flame"></div></div>
+                <div class="candle"><div class="flame"></div></div>
+              </div>
+            </div>
+            <div class="cake-mid"></div>
+            <div class="cake-bot"></div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+        <h2 class="slide2-title">It's Your Birthday!! 🎂</h2>
+        <p class="slide2-sub">Today is all about YOU, Jenni 🥰</p>
+        <div class="birthday-emojis">
+          <span class="pop-emoji">🎈</span>
+          <span class="pop-emoji d1">🎁</span>
+          <span class="pop-emoji d2">🎊</span>
+          <span class="pop-emoji d3">🥳</span>
+          <span class="pop-emoji d4">🎀</span>
+        </div>
+        <button class="next-btn" onclick="nextSlide()">Next 💌</button>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 3: MESSAGE ===== -->
+    <div class="slide" id="slide-3" data-slide="3">
+      <div class="slide-inner slide3-inner">
+        <div class="message-card">
+          <div class="message-header">
+            <div class="msg-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="msg-title">💌 A Message For jenni jayy</span>
+          </div>
+          <div class="message-body" id="messageBody">
+            <p class="msg-text">
+Happy birthday yaa, Jenni(jay)
+
+Hari ini spesial banget yaa. Semoga di umur yang baru ini, kamu bisa dapetin lebih banyak hal baik, kebahagiaan yang nggak habis-habis, dan semua hal yang kamu harapin pelan-pelan bisa tercapai.
+
+Jujur ya, walaupun kita cuma kenal dari online, aku cukup sering ngeliat gimana perjalanan kamu selama ini. Dan dari situ, aku bisa bilang kalau kamu itu orang yang kuat. Nggak semua orang bisa lewatin hal-hal yang kamu hadapi dengan cara yang kamu lakuin sekarang. Aku beneran kagum sama kamu, cara kamu bertahan, cara kamu tetap jalan walaupun keadaannya nggak selalu mudah.
+
+Aku juga ngerasa kamu itu orang yang menarik—bukan cuma menyenangkan, tapi juga punya banyak sisi yang bikin orang lain respect. Kayak kamu punya banyak kemampuan, banyak hal yang bisa kamu lakuin, dan itu keren banget. Kadang kepikiran aja, “kayaknya seru ya kalau suatu saat bisa ngobrol langsung sama kamu.” Nggak harus sekarang, nggak perlu buru-buru, tapi kalau suatu hari waktunya pas, mungkin itu bakal jadi hal yang menyenangkan.
+
+Aku juga tahu sekarang kamu lagi nggak di kondisi yang gampang, apalagi dengan keadaan ayah kamu yang lagi sakit. Itu pasti berat banget, dan wajar kalau kamu ngerasa capek atau down. Tapi aku harap kamu tetap kuat ya. Kamu nggak sendiri, walaupun mungkin rasanya sepi atau berat, tapi ada banyak doa dan harapan baik yang nyertain kamu, termasuk dari aku.
+
+Kalau lagi lelah, nggak apa-apa buat istirahat sebentar. Kalau lagi sedih, nggak apa-apa juga buat ngerasain itu. Kamu nggak harus selalu kuat setiap waktu. Tapi aku percaya, kamu punya kekuatan buat ngelewatin ini semua, sedikit demi sedikit.
+
+Semoga ke depan, keadaan jadi lebih baik. Semoga ayah kamu diberikan kesembuhan, dan kamu juga diberikan ketenangan hati. Semoga kamu selalu dilindungi, dikuatkan, dan dikelilingi hal-hal baik. Dan semoga semua hal yang lagi kamu perjuangkan sekarang, suatu hari nanti bisa jadi sesuatu yang kamu banggakan.
+
+Sekali lagi, selamat ulang tahun ya, Jenni. Jaga diri kamu baik-baik. Semoga hari ini dan kedepannya, walaupun sederhana, tetap bisa bikin kamu senyum 😊
+
+            </p>
+          </div>
+          <div class="message-footer">
+            <button class="next-btn msg-next-btn" onclick="nextSlide()">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 4: GALLERY / PHOTOS ===== -->
+    <div class="slide" id="slide-4" data-slide="4">
+      <div class="slide-inner slide4-inner">
+        <h2 class="slide4-title">Your Memories 📸</h2>
+        <p class="slide4-sub">Little moments, forever treasured ✨</p>
+
+        <div class="polaroid-stage">
+          <!-- Row 1 -->
+          <div class="polaroid p-tilt-l p-delay0">
+            <div class="polaroid-img-wrap">
+              <img src="img/3.jpeg" alt="Jenni" />
+            </div>
+            <p class="polaroid-caption">Jenni 💕</p>
+          </div>
+
+          <div class="polaroid p-tilt-r p-delay1">
+            <div class="polaroid-img-wrap">
+              <img src="img/6.jpeg" alt="Fav" />
+            </div>
+            <p class="polaroid-caption">My fav pic 🌸</p>
+          </div>
+
+          <div class="polaroid p-tilt-l2 p-delay2">
+            <div class="polaroid-img-wrap gif-wrap">
+              <img src="img/1.jpeg" alt="uwu" />
+            </div>
+            <p class="polaroid-caption">school uniform jenni💫</p>
+          </div>
+
+          <div class="polaroid p-tilt-r2 p-delay3">
+            <div class="polaroid-img-wrap">
+              <img src="img/5.jpeg" alt="Jenni 2" />
+            </div>
+            <p class="polaroid-caption">Always shining ⭐</p>
+          </div>
+
+          <div class="polaroid p-tilt-l p-delay4">
+            <div class="polaroid-img-wrap gif-wrap">
+              <img src="img/7.png" alt="hbd" onerror="this.parentElement.parentElement.style.display='none'" />
+            </div>
+            <p class="polaroid-caption">Happy Birthday! 🎂</p>
+          </div>
+        </div>
+
+        <button class="next-btn" onclick="nextSlide()">Continue 💫</button>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 5: SPECIAL TEXT ===== -->
+    <div class="slide" id="slide-5" data-slide="5">
+      <div class="slide-inner" style="justify-content:center; gap:0;">
+        <div class="special-sequence" id="specialSeq">
+          <p class="seq-text" id="seq1">That's what I wish for you.</p>
+          <p class="seq-text hidden" id="seq2">I Hope You're Always Happy ✨</p>
+          <p class="seq-text hidden" id="seq3">For you, I wanted to do something<br><strong>Special</strong>.</p>
+          <p class="seq-text hidden" id="seq4">Because,</p>
+          <p class="seq-text big-text hidden" id="seq5">You are so Special<br> <span class="tilt-smile">:)</span></p>
+        </div>
+        <div class="seq-controls" style="margin-top:24px;">
+          <button class="seq-btn" id="seqNextBtn" onclick="nextSeq()">Next ▶</button>
+          <button class="next-btn hidden" id="slideNextBtn" onclick="nextSlide()">Continue 🌸</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 6: BALLOONS + PROFILE ===== -->
+    <div class="slide" id="slide-6" data-slide="6">
+      <div class="slide-inner slide6-inner">
+        <!-- Balloons background -->
+        <div class="balloons-bg" id="balloonsBg">
+          <img src="img/ballon1.svg" class="balloon b1" />
+          <img src="img/ballon2.svg" class="balloon b2" />
+          <img src="img/ballon3.svg" class="balloon b3" />
+          <img src="img/ballon1.svg" class="balloon b4" />
+          <img src="img/ballon2.svg" class="balloon b5" />
+          <img src="img/ballon3.svg" class="balloon b6" />
+          <img src="img/ballon1.svg" class="balloon b7" />
+          <img src="img/ballon2.svg" class="balloon b8" />
+        </div>
+
+        <div class="profile-section">
+          <div class="profile-wrapper">
+            <div class="profile-ring ring1"></div>
+            <div class="profile-ring ring2"></div>
+            <img src="img/4.jpeg" class="profile-pic" alt="Jenni" />
+            <img src="" class="party-hat" alt="hat" />
+          </div>
+          <h2 class="hbd-name">Happy Birthday<br>Jenni!!!</h2>
+          <p class="hbd-sub">I Wish You All The Best 🌸</p>
+        </div>
+        <button class="next-btn" onclick="nextSlide()">Almost Done ✨</button>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 7: STARS / PARTY ===== -->
+    <div class="slide" id="slide-7" data-slide="7">
+      <div class="slide-inner" style="justify-content:center; gap:12px; padding-bottom:60px;">
+        <div class="party-banner">
+          <span class="banner-letter">H</span>
+          <span class="banner-letter">A</span>
+          <span class="banner-letter">P</span>
+          <span class="banner-letter">P</span>
+          <span class="banner-letter">Y</span>
+          <span class="banner-space"> </span>
+          <span class="banner-letter">B</span>
+          <span class="banner-letter">I</span>
+          <span class="banner-letter">R</span>
+          <span class="banner-letter">T</span>
+          <span class="banner-letter">H</span>
+          <span class="banner-letter">D</span>
+          <span class="banner-letter">A</span>
+          <span class="banner-letter">Y</span>
+          <span class="banner-letter">!</span>
+        </div>
+        <div class="so-big-wrapper">
+          <div class="so-big">
+            <span class="so-letter"></span>
+            <span class="so-letter"></span>
+          </div>
+          <div class="party-gif-wrap">
+            <img src="img/party.gif" class="party-gif" alt="" onerror="this.style.display='none'"/>
+          </div>
+        </div>
+        <div class="fireworks-container" id="fireworks"></div>
+        <button class="next-btn slide7-next" onclick="nextSlide()">Finish 🎆</button>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 8: ENDING ===== -->
+    <div class="slide" id="slide-8" data-slide="8">
+      <div class="slide-inner ending-inner">
+        <div class="ending-glow"></div>
+        <p class="ending-line1">I tried my best to make this. 🌸</p>
+        <p class="ending-line2">I hope you love it</p>
+        <p class="ending-smile">:)</p>
+        <div class="ending-cats">
+          <img src="img/uwu.gif" class="ending-gif" alt="" onerror="this.style.display='none'"/>
+        </div>
+        <div class="ending-actions">
+          <button class="replay-btn" onclick="replayAll()">
+            <span>↺</span> Watch Again
+          </button>
+        </div>
+        <p class="ending-credits">i wish you all the best 💕  Jenni</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- end slides-wrapper -->
+
+  <!-- Confetti container -->
+  <div id="confetti-container"></div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./script/main.js"></script>
+
+</body>
+</html>
