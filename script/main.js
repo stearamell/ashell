@@ -1,5 +1,5 @@
 /* ============================================================
-   NADYA BIRTHDAY - main.js
+   jenni BIRTHDAY - main.js
    ============================================================ */
 
 const TOTAL_SLIDES = 8;
@@ -288,7 +288,7 @@ window.addEventListener('load', () => {
   buildDots();
 
   Swal.fire({
-    title: '🎂 Surprise untuk Nadya!',
+    title: '🎂 Surprise untuk jenni sesill!',
     html: '<p style="color:rgba(255,255,255,0.75);font-family:Quicksand,sans-serif;font-size:1rem">Ada sesuatu yang spesial untukmu 💕<br>Mau buka hadiah ini?</p>',
     background: 'rgba(18,8,36,0.97)',
     color: '#fff',
